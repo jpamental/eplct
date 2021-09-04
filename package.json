@@ -1,0 +1,23 @@
+{
+  "name": "eplct",
+  "version": "1.0.0",
+  "description": "A website for the East Providence Land Conservation Trust at Bridgham Farm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jpamental@github.com/jpamental/eplct.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpamental/eplct/issues"
+  },
+  "homepage": "https://github.com/jpamental/eplct#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
