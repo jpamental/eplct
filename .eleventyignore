@@ -1,0 +1,8 @@
+README.md
+node_modules
+assets/scss/**/*
+admin/email_pwd_reset.html
+admin/email_invitation.html
+admin/email_confirmation.html
+admin/email_change.html
+_redirects

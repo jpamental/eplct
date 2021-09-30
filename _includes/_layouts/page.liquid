@@ -1,0 +1,15 @@
+{% include _partials/meta_open %}
+
+<article class="title-page">
+<header class="full-width">
+  {% if header_image %}
+    <figure>
+      <img src="{{ header_image }}" alt="{{ header_image_alt }}" {% if header_image_width %}width="{{ header_image_width }}" {% endif %} {% if header_image_height %}height="{{ header_image_height }}" {% endif %} />
+    </figure>
+  {% endif %}
+  <h1>{{ title }}</h1>
+</header>
+
+  {{ content }}
+</article>
+{% include _partials/meta_close %}

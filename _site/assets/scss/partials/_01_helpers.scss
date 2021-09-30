@@ -1,0 +1,110 @@
+.visually-hidden:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  &::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    padding-right: 0.25em;
+    vertical-align: baseline;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.icon-facebook::before {
+  content: "\f082";
+}
+
+.icon-github::before {
+  content: "\f09b";
+}
+
+.icon-linkedin::before {
+  content: "\f08c";
+}
+
+.icon-medium::before {
+  content: "\f23a";
+}
+
+.icon-strava::before {
+  content: "\f428";
+}
+
+.icon-twitter::before {
+  content: "\f081";
+}
+
+.icon-instagram::before {
+  content: "\ea92";
+  font-size: 1.2em;
+  float: left;
+  margin-top: .75rem;
+}
+
+.icon-youtube::before {
+  content: "\ea92";
+  font-size: 1.2em;
+  float: left;
+  margin-top: .75rem;
+}
+
+.icon-cancel-circle::before {
+  content: "\78";
+}
+
+.icon-ligature::before {
+  content: "\ea5d";
+}
+
+/* Social Media links */
+.sm-links {
+  max-width: none;
+
+  a {
+    &:link,
+    &:visited {
+      font-size: 0.875rem;
+      line-height: 2;
+      text-decoration: none;
+      font-family: $fonts-base-sans;
+
+      @supports (font-variation-settings: normal) {
+        font-family: $fonts-sans;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::before {
+      font-size: 1rem;
+      padding-right: 0.25em;
+      position: relative;
+      top: 0.2em;
+    }
+
+    &[class^="icon-instagram"]::before {
+      font-size: 1.25rem;
+      top: 0.45em;
+    }
+  }
+}

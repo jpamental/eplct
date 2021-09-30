@@ -1,0 +1,363 @@
+
+// mq values (no unit)
+$bp--small-value: 28;
+$bp--medium-value: 42;
+$bp--large-value: 60;
+$bp--xlarge-value: 75;
+$bp--xxlarge-value: 90;
+$bp--xxxlarge-value: 110;
+
+// mq's in ems
+$bp--small: $bp--small-value * 1em;
+$bp--medium: $bp--medium-value * 1em;
+$bp--large: $bp--large-value * 1em;
+$bp--xlarge: $bp--xlarge-value * 1em;
+$bp--xxlarge: $bp--xxlarge-value * 1em;
+$bp--xxxlarge: $bp--xxxlarge-value * 1em;
+
+
+
+/* Set custom properties for layout and sizing */
+
+$content-width-s: 88vw;
+$content-width-m: 40rem;
+$content-width-l: 44rem;
+
+:root {
+  --content-width: #{$content-width-s};
+  --margin-left: calc( (100vw - var(--content-width)) / 2 );
+  --margin-right: calc( (100vw - var(--content-width)) / 2 );
+
+  @media screen and (min-width: $bp--medium) {
+    --content-width: #{$content-width-m};
+    --margin-left: calc( ((100vw - var(--content-width)) / 7) * 3 );
+    --margin-right: calc( ((100vw - var(--content-width)) / 7) * 4 );
+  }
+
+  @media screen and (min-width: $bp--large) {
+    --content-width: #{$content-width-l};
+  }
+}
+
+/* Colors */
+
+$color-red: #ed1c24;
+$color-orange: #f38816;
+$color-navy: #003a67;
+$color-hope: #ffffff;
+$color-gray: #3f3f3f;
+$color-narragansett-bay: #12768e;
+$color-light-blue: #cedef0;
+$color-green: #a8f019;
+$color-gold: #fec500;
+$color-supporting-gray-1: #656565;
+$color-supporting-gray-2: #787878;
+$color-supporting-gray-3: #8b8b8b;
+$color-supporting-gray-4: #c4c4c4;
+$color-supporting-gray-5: #d7d7d7;
+$color-supporting-gray-6: #eaeaea;
+
+
+$color-paper-light: #fafafd;
+$color-light-gray: #f0f0f0;
+$color-medium-gray: #8b8b8b;
+$color-blue: $color-navy;
+$color-purple: #5407a2;
+$color-red: $color-red;
+$color-warm-dark-gray: #291717;
+
+$color-background: $color-paper-light;
+$color-background-accent: $color-light-gray;
+$color-text: $color-gray;
+$color-a-link: $color-navy;
+$color-a-visited: $color-purple;
+$color-a-hover: $color-red;
+$color-a-focus: $color-red;
+$color-a-active: $color-red;
+$color-text-accent: $color-navy;
+
+:root {
+  --color-paper-light: #{$color-paper-light};
+  --color-light-gray: #{$color-light-gray};
+  --color-blue: #{$color-blue};
+  --color-purple: #{$color-purple};
+  --color-red: #{$color-red};
+  --color-orange: #{$color-orange};
+
+  --color-background: #ffffff;
+  --color-background-accent: var(--color-light-gray);
+  --color-text: var(--color-gray);
+  --color-a-link: #{$color-navy};
+  --color-a-visited: #{$color-purple};
+  --color-a-hover: #{$color-red};
+  --color-a-focus: #{$color-red};
+  --color-a-active: #{$color-red};
+  --color-text-accent: #{$color-text-accent};
+}
+
+/* Fonts */
+$fonts-base-serif: Georgia, 'Times New Roman', Times, serif;
+$fonts-base-sans: Helvetica, Arial, sans-serif;
+$fonts-base-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+$fonts-serif-static: "Literata", $fonts-base-serif;
+$fonts-sans-static: "Work Sans", $fonts-base-sans; /* No web fonts specified for Sans */
+$fonts-code-static: "Fira Code", $fonts-base-code;
+
+$fonts-serif: "Literata Variable", $fonts-base-serif;
+$fonts-sans: "Plex Sans Variable", $fonts-base-sans;
+$fonts-serif-display: "Literata Variable", $fonts-base-serif;
+$fonts-code: "Fira Code Variable", $fonts-base-code;
+
+:root {
+  --fonts-base-serif: #{$fonts-base-serif};
+  --fonts-base-sans: #{$fonts-base-sans};
+  --fonts-base-code: #{$fonts-base-code};
+
+  --fonts-serif-static: #{$fonts-serif-static};
+  --fonts-sans-static: #{$fonts-sans-static};
+  --fonts-code-static: #{$fonts-code-static};
+
+  --fonts-serif: #{$fonts-serif};
+  --fonts-sans: #{$fonts-sans};
+  --fonts-serif-display: #{$fonts-serif-display};
+  --fonts-code: #{$fonts-code};
+}
+
+/* Text sizing */
+
+/* Set base text size for all calcs */
+$text-base-size: 16;
+
+/* Preprocessed for fallbacks */
+
+/* Change px values here for all font sizing */
+$p-size-s-px: 16;
+$p-size-m-px: 18;
+$p-size-l-px: 20;
+
+$h1-size-s-px: 36;
+$h1-size-m-px: 56;
+$h1-size-l-px: 72;
+
+$h2-size-s-px: 24;
+$h2-size-m-px: 30;
+$h2-size-l-px: 36;
+
+$h3-size-s-px: 20;
+$h3-size-m-px: 22;
+$h3-size-l-px: 24;
+
+$h4-size-s-px: 16;
+$h4-size-m-px: 18;
+$h4-size-l-px: 20;
+
+$bq-size-s-px: 16;
+$bq-size-m-px: 18;
+$bq-size-l-px: 20;
+
+/* Scaling typography bits - set scaling values */
+:root {
+  --p-scaler-value: 1;
+  --h1-scaler-value: 4.5;
+  --h2-scaler-value: 3;
+  --h3-scaler-value: 2;
+  --h4-scaler-value: 1.85;
+  --bq-scaler-value: 2.25;
+  --p-lh-scaler-value: 3;
+  --h1-lh-scaler-value: 3.5;
+  --h2-lh-scaler-value: 3;
+  --h3-lh-scaler-value: 3.75;
+  --h4-lh-scaler-value: 3.75;
+  --bq-lh-scaler-value: 2.5;
+
+
+  /* default starting values for scaling formulas */
+  --font-size-min-value: 1;
+  --font-size-max-value: 1.25;
+  --font-size-scaler-value: 1.25;
+}
+
+/* Font size rem values (needed for dynamic sizing) */
+$p-size-s-value: $p-size-s-px / $text-base-size;
+$p-size-m-value: $p-size-m-px / $text-base-size;
+$p-size-l-value: $p-size-l-px / $text-base-size;
+
+$h1-size-s-value: $h1-size-s-px / $text-base-size;
+$h1-size-m-value: $h1-size-m-px / $text-base-size;
+$h1-size-l-value: $h1-size-l-px / $text-base-size;
+
+$h2-size-s-value: $h2-size-s-px / $text-base-size;
+$h2-size-m-value: $h2-size-m-px / $text-base-size;
+$h2-size-l-value: $h2-size-l-px / $text-base-size;
+
+$h3-size-s-value: $h3-size-s-px / $text-base-size;
+$h3-size-m-value: $h3-size-m-px / $text-base-size;
+$h3-size-l-value: $h3-size-l-px / $text-base-size;
+
+$h4-size-s-value: $h4-size-s-px / $text-base-size;
+$h4-size-m-value: $h4-size-m-px / $text-base-size;
+$h4-size-l-value: $h4-size-l-px / $text-base-size;
+
+$bq-size-s-value: $bq-size-s-px / $text-base-size;
+$bq-size-m-value: $bq-size-m-px / $text-base-size;
+$bq-size-l-value: $bq-size-l-px / $text-base-size;
+
+/* Font sizes in rems */
+$p-size-s: $p-size-s-value * 1rem;
+$p-size-m: $p-size-m-value * 1rem;
+$p-size-l: $p-size-l-value * 1rem;
+
+$h1-size-s: $h1-size-s-value * 1rem;
+$h1-size-m: $h1-size-m-value * 1rem;
+$h1-size-l: $h1-size-l-value * 1rem;
+
+$h2-size-s: $h2-size-s-value * 1rem;
+$h2-size-m: $h2-size-m-value * 1rem;
+$h2-size-l: $h2-size-l-value * 1rem;
+
+$h3-size-s: $h3-size-s-value * 1rem;
+$h3-size-m: $h3-size-m-value * 1rem;
+$h3-size-l: $h3-size-l-value * 1rem;
+
+$h4-size-s: $h4-size-s-value * 1rem;
+$h4-size-m: $h4-size-m-value * 1rem;
+$h4-size-l: $h4-size-l-value * 1rem;
+
+$bq-size-s: $bq-size-s-value * 1rem;
+$bq-size-m: $bq-size-m-value * 1rem;
+$bq-size-l: $bq-size-l-value * 1rem;
+
+/* Line-height */
+$p-lh-s: 1.5;
+$p-lh-m: 1.525;
+$p-lh-l: 1.55;
+
+$h1-lh-s: 1.05;
+$h1-lh-m: 1.1;
+$h1-lh-l: 1.15;
+
+$h2-lh-s: 1.1;
+$h2-lh-m: 1.15;
+$h2-lh-l: 1.2;
+
+$h3-lh-s: 1.1;
+$h3-lh-m: 1.15;
+$h3-lh-l: 1.2;
+
+$h4-lh-s: 1.1;
+$h4-lh-m: 1.15;
+$h4-lh-l: 1.2;
+
+/* Custom props for modern browsers */
+:root {
+  --p-size-s-value: #{$p-size-s-value};
+  --p-size-m-value: #{$p-size-m-value};
+  --p-size-l-value: #{$p-size-l-value};
+
+  --h1-size-s-value: #{$h1-size-s-value};
+  --h1-size-m-value: #{$h1-size-m-value};
+  --h1-size-l-value: #{$h1-size-l-value};
+
+  --h2-size-s-value: #{$h2-size-s-value};
+  --h2-size-m-value: #{$h2-size-m-value};
+  --h2-size-l-value: #{$h2-size-l-value};
+
+  --h3-size-s-value: #{$h3-size-s-value};
+  --h3-size-m-value: #{$h3-size-m-value};
+  --h3-size-l-value: #{$h3-size-l-value};
+
+  --h4-size-s-value: #{$h4-size-s-value};
+  --h4-size-m-value: #{$h4-size-m-value};
+  --h4-size-l-value: #{$h4-size-l-value};
+
+  --bq-size-s-value: #{$bq-size-s-value};
+  --bq-size-m-value: #{$bq-size-m-value};
+  --bq-size-l-value: #{$bq-size-l-value};
+
+  --p-size-s: #{$p-size-s-value * 1rem};
+  --p-size-m: #{$p-size-m-value * 1rem};
+  --p-size-l: #{$p-size-l-value * 1rem};
+
+  --h1-size-s: #{$h1-size-s-value * 1rem};
+  --h1-size-m: #{$h1-size-m-value * 1rem};
+  --h1-size-l: #{$h1-size-l-value * 1rem};
+
+  --h2-size-s: #{$h2-size-s-value * 1rem};
+  --h2-size-m: #{$h2-size-m-value * 1rem};
+  --h2-size-l: #{$h2-size-l-value * 1rem};
+
+  --h3-size-s: #{$h3-size-s-value * 1rem};
+  --h3-size-m: #{$h3-size-m-value * 1rem};
+  --h3-size-l: #{$h3-size-l-value * 1rem};
+
+  --h4-size-s: #{$h4-size-s-value * 1rem};
+  --h4-size-m: #{$h4-size-m-value * 1rem};
+  --h4-size-l: #{$h4-size-l-value * 1rem};
+
+  --bq-size-s: #{$bq-size-s-value * 1rem};
+  --bq-size-m: #{$bq-size-m-value * 1rem};
+  --bq-size-l: #{$bq-size-l-value * 1rem};
+
+  --p-lh-s: #{$p-lh-s};
+  --p-lh-m: #{$p-lh-m};
+  --p-lh-l: #{$p-lh-l};
+
+  --h1-lh-s: #{$h1-lh-s};
+  --h1-lh-m: #{$h1-lh-m};
+  --h1-lh-l: #{$h1-lh-l};
+
+  --h2-lh-s: #{$h2-lh-s};
+  --h2-lh-m: #{$h2-lh-m};
+  --h2-lh-l: #{$h2-lh-l};
+
+  --h3-lh-s: #{$h3-lh-s};
+  --h3-lh-m: #{$h3-lh-m};
+  --h3-lh-l: #{$h3-lh-l};
+
+  --h4-lh-s: #{$h4-lh-s};
+  --h4-lh-m: #{$h4-lh-m};
+  --h4-lh-l: #{$h4-lh-l};
+
+  /* tie optical size axis to font size */
+  --p-opsz-s: #{$p-size-s-px};
+  --p-opsz-m: #{$p-size-m-px};
+  --p-opsz-l: #{$p-size-l-px};
+
+  /* Force optical size axis to the highest value for greatest contrast */
+  --h1-opsz-s: 24;
+  --h1-opsz-m: 48;
+  --h1-opsz-l: 72;
+
+  --h2-opsz-s: 8;
+  --h2-opsz-m: 8;
+  --h2-opsz-l: 8;
+
+  --h3-opsz-s: 16;
+  --h3-opsz-m: 16;
+  --h3-opsz-l: 16;
+
+  --h4-opsz-s: 16;
+  --h4-opsz-m: 16;
+  --h4-opsz-l: 16;
+}
+
+/* Responsive text-size spacer */
+$body-text-spacer-s: $p-size-s;
+$body-text-spacer-m: $p-size-m;
+$body-text-spacer-l: $p-size-l;
+
+:root {
+  --body-text-spacer: #{$body-text-spacer-s};
+  @media screen and (min-width: $bp--medium) {
+    --body-text-spacer: #{$body-text-spacer-m};
+  }  
+  @media screen and (min-width: $bp--large) {
+    --body-text-spacer: #{$body-text-spacer-l};
+  }  
+}
+
+/* Swipe UI */
+:root {
+  --page-count: 1;
+}
