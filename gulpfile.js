@@ -1,5 +1,5 @@
 const gulp    = require("gulp");
-const sass    = require("gulp-sass");
+const sass    = require("gulp-sass")(require('sass'));
 const sassGlob = require('gulp-sass-glob');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -13,9 +13,7 @@ function scssTask(){
 return gulp.src(files.scssPath)
   .pipe(sourcemaps.init()) // initialize sourcemaps first
   .pipe(sassGlob())
-  .pipe(sass({
-    outputStyle: 'uncompressed'
-  }))
+  .pipe(sass())
   .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
   .pipe(gulp.dest('assets/css')); // put final CSS in assets folder
 }
