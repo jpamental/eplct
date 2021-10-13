@@ -27,7 +27,7 @@
   --color-red: #ed1c24;
   --color-orange: #f38816;
   --color-background: #ffffff;
-  --color-background-accent: var(--color-light-gray);
+  --color-background-accent: var(--color-light-blue);
   --color-text: var(--color-gray);
   --color-a-link: #003a67;
   --color-a-visited: #5407a2;
@@ -1395,7 +1395,7 @@ article > * {
 .front .top-bar {
   position: absolute;
   width: 100%;
-  background-color: rgba(250, 250, 253, 0.9);
+  background-color: rgba(165, 180, 200, 0.9);
 }
 
 /* Navigation */
@@ -1423,6 +1423,9 @@ article > * {
 }
 .main-menu__trigger:hover, .main-menu__trigger:focus, .main-menu__trigger:active {
   color: #f38816;
+}
+.front .main-menu__trigger:hover, .front .main-menu__trigger:focus, .front .main-menu__trigger:active {
+  color: #ffffff;
 }
 .main-menu .menu {
   font-size: 0.92rem;
@@ -1500,15 +1503,24 @@ article > * {
   background-color: rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
+.front .main-menu .menu a:hover {
+  color: #ffffff;
+}
 .main-menu .menu a:focus {
   color: #f38816;
   background-color: rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
+.front .main-menu .menu a:focus {
+  color: #ffffff;
+}
 .main-menu .menu a:active {
   color: #f38816;
   background-color: rgba(0, 0, 0, 0.05);
   text-decoration: none;
+}
+.front .main-menu .menu a:active {
+  color: #ffffff;
 }
 .main-menu.open {
   overflow: visible;
@@ -2149,7 +2161,7 @@ article figure + h1 {
   text-align: center;
 }
 .block--fit-pricing .price {
-  background-color: #cedef0;
+  background-color: #a5b4c8;
   margin: 0;
   padding: 0.5rem 0.5rem 0.35rem 0.5rem;
   text-align: center;
@@ -2170,7 +2182,7 @@ article figure + h1 {
 }
 
 .button {
-  background-color: #cedef0;
+  background-color: #a5b4c8;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(255, 255, 255, 0.07) 40%, rgba(0, 0, 0, 0.08));
   border-radius: 0.15rem;
   border-bottom: 1px solid rgba(63, 63, 63, 0.5);
@@ -2186,7 +2198,7 @@ article figure + h1 {
   text-decoration: none;
 }
 .button:hover {
-  background-color: #a7c4e4;
+  background-color: #859ab5;
   color: #3f3f3f;
   font-weight: 575;
 }

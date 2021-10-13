@@ -14,7 +14,7 @@
   .front & {
     position: absolute;
     width: 100%;
-    background-color: rgba($color-paper-light, 0.9);
+    background-color: rgba($color-light-blue, 0.9);
   }
 }
 
@@ -44,6 +44,9 @@
     &:focus,
     &:active {
       color: $color-orange;
+      .front & {
+        color: #ffffff;
+      }
     }
   }
 
@@ -124,18 +127,27 @@
         color: $color-orange;
         background-color: rgba(0,0,0,.05);
         text-decoration: none;
+        .front & {
+          color: #ffffff;
+        }
       }
       
       &:focus {
         color: $color-orange;
         background-color: rgba(0,0,0,.05);
         text-decoration: none;
+        .front & {
+          color: #ffffff;
+        }
       }
       
       &:active {
         color: $color-orange;
         background-color: rgba(0,0,0,.05);
         text-decoration: none;
+        .front & {
+          color: #ffffff;
+        }
       }
     }
   }

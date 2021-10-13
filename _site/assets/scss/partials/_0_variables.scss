@@ -61,6 +61,7 @@ $color-supporting-gray-6: #eaeaea;
 $color-paper-light: #fafafd;
 $color-light-gray: #f0f0f0;
 $color-medium-gray: #8b8b8b;
+$color-light-blue: rgb(165,180,200);
 $color-blue: $color-navy;
 $color-purple: #5407a2;
 $color-red: $color-red;
@@ -85,7 +86,7 @@ $color-text-accent: $color-navy;
   --color-orange: #{$color-orange};
 
   --color-background: #ffffff;
-  --color-background-accent: var(--color-light-gray);
+  --color-background-accent: var(--color-light-blue);
   --color-text: var(--color-gray);
   --color-a-link: #{$color-navy};
   --color-a-visited: #{$color-purple};
