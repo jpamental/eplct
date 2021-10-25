@@ -280,7 +280,7 @@
 }
 
 .home-image-heading {
-  //align-items: end;
+  align-items: end;
   margin: 0;
   max-width: none;
   padding: 0;
@@ -322,6 +322,7 @@
     }
   }
   &__heading {
+    --font-size-min-value: 1.5;
     color: #ffffff;
   }
 }
