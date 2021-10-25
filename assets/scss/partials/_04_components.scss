@@ -361,6 +361,7 @@
   grid-template-columns: auto;
   margin: 0 var(--margin-right) 1rem calc(var(--margin-left) / 2);
   &__heading {
+    --font-size-min-value: 1.75;
     color: #ffffff;
     max-width: none;
   }
