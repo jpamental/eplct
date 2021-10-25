@@ -13,9 +13,11 @@
   }
   .front &,
   .membership & {
-    position: absolute;
     width: 100%;
     background-color: rgba($color-light-blue, 0.9);
+    @media screen and (min-width: $bp--medium) {
+      position: absolute;
+    }
   }
 }
 
@@ -299,7 +301,13 @@
   grid-column: 1/2;
   grid-row: 1/2;
   grid-template-columns: 15vw auto;
-  margin: 0 var(--margin-right) 1rem calc(var(--margin-left) - 15vw);
+  margin: 0 var(--margin-right) 1rem calc(var(--margin-left) - 1vw);
+  @media screen and (min-width: $bp--large) {
+    margin-left: calc(var(--margin-left) - 5vw);
+  }
+  @media screen and (min-width: $bp--xlarge) {
+    margin-left: calc(var(--margin-left) - 15vw);
+  }
   &__logo {
     max-width: 100%;
     margin: 0;
