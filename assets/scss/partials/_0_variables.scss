@@ -50,6 +50,7 @@ $color-narragansett-bay: #12768e;
 $color-light-blue: #cedef0;
 $color-green: #a8f019;
 $color-gold: #fec500;
+$color-field-green: #006838;
 $color-supporting-gray-1: #656565;
 $color-supporting-gray-2: #787878;
 $color-supporting-gray-3: #8b8b8b;
@@ -68,14 +69,14 @@ $color-red: $color-red;
 $color-warm-dark-gray: #291717;
 
 $color-background: $color-paper-light;
-$color-background-accent: $color-light-gray;
+$color-background-accent: rgba($color-field-green,0.15);
 $color-text: $color-gray;
 $color-a-link: $color-navy;
 $color-a-visited: $color-purple;
 $color-a-hover: $color-red;
 $color-a-focus: $color-red;
 $color-a-active: $color-red;
-$color-text-accent: $color-navy;
+$color-text-accent: $color-field-green;
 
 :root {
   --color-paper-light: #{$color-paper-light};

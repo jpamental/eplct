@@ -1,5 +1,5 @@
 # EPLCT.org
-A website for the East Providence Land Conservation Trust at Bridgham Farm
+A website for the Bridgham Farm Land Trust at Bridgham Farm
 
 
 ## Live URL
