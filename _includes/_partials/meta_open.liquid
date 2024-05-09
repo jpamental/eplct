@@ -19,9 +19,9 @@
     <title>
       {% if title %}{{ title }} | {% endif %}{{ metadata.title }}
     </title>
-		<meta property="og:site_name" content="Bridgham Farm - East Providence Land Conservation Trust"/>
-		<meta property="og:title" content="Bridgham Farm - East Providence Land Conservation Trust"/>
-		<meta property="og:url" content="https://eplct.org{{ page.url }}"/>
+		<meta property="og:site_name" content="Bridgham Farm - Bridgham Farm Land Trust"/>
+		<meta property="og:title" content="Bridgham Farm - Bridgham Farm Land Trust"/>
+		<meta property="og:url" content="https://bridghamfarm.org{{ page.url }}"/>
 		<meta property="og:type" content="website"/>
 		<meta property="place:location:latitude" content="42.4567742">
 		<meta property="place:location:longitude" content="-71.3592137">
@@ -29,15 +29,15 @@
 		<meta property="og:image" content="/assets/images/ata_and_fitlab_logos.jpg"/>
 		<meta property="og:image:width" content="700"/>
 		<meta property="og:image:height" content="209"/>
-		<meta itemprop="name" content="Bridgham Farm - East Providence Land Conservation Trust"/>
-		<meta itemprop="url" content="https://eplct.org{{ page.url }}"/>
+		<meta itemprop="name" content="Bridgham Farm - Bridgham Farm Land Trust"/>
+		<meta itemprop="url" content="https://bridghamfarm.org{{ page.url }}"/>
 		<meta itemprop="description" content="{% if description %}{{ description }}{% else %}{{ content | strip_html | truncatewords: 25 }}{% endif %}"/>
 		<meta itemprop="thumbnailUrl" content="/assets/images/ata_and_fitlab_logos.jpg"/>
 		<link rel="image_src" href="/assets/images/ata_and_fitlab_logos.jpg" />
 		<meta itemprop="image" content="/assets/images/ata_and_fitlab_logos.jpg"/>
-		<meta name="twitter:title" content="Bridgham Farm - East Providence Land Conservation Trust"/>
+		<meta name="twitter:title" content="Bridgham Farm - Bridgham Farm Land Trust"/>
 		<meta name="twitter:image" content="/assets/images/ata_and_fitlab_logos.jpg"/>
-		<meta name="twitter:url" content="https://eplct.org{{ page.url }}"/>
+		<meta name="twitter:url" content="https://bridghamfarm.org{{ page.url }}"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ content | strip_html | truncatewords: 25 }}{% endif %}"/>
 
@@ -167,7 +167,7 @@
       <div class="link-wrapper">
 				<nav class="main-menu">
         <a href="{{ '/' | url }}" class="main-menu__trigger" id="main-menu_trigger">Menu</a>
-					{% include _partials/navigation.liquid %}
+					{% include '_partials/navigation.liquid' %}
 				</nav>
 			</div>
     </header>
