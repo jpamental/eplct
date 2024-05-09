@@ -14,7 +14,7 @@
   .front &,
   .membership & {
     width: 100%;
-    background-color: rgba($color-field-green, 0.5);
+    background-color: rgba($color-field-green, 0.75);
     @media screen and (min-width: $bp--medium) {
       position: absolute;
     }
@@ -41,7 +41,7 @@
     }
     &:link,
     &:visited {
-      color: $color-warm-dark-gray;
+      color: $color-paper-light;
     }
     &:hover,
     &:focus,
@@ -114,12 +114,12 @@
       }
 
       &:link {
-        color: $color-warm-dark-gray;
+        color: $color-paper-light;
         text-decoration: none;
       }
       
       &:visited {
-        color: $color-warm-dark-gray;
+        color: $color-paper-light;
         text-decoration: none;
       }
       
@@ -155,7 +155,7 @@
     overflow: visible;
     > .menu {
       @media screen and (max-width: $bp--medium) {
-        background-color: $color-paper-light;
+        background-color: $color-field-green;
         opacity: 1;
         right: 0;
         width: 40vw;
@@ -233,7 +233,7 @@
     }
     &:link,
     &:visited {
-      color: $color-gray;
+      color: $color-paper-light;
       text-decoration: none;
     }
     &:hover {

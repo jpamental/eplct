@@ -1394,7 +1394,7 @@ article > * {
 }
 .front .top-bar, .membership .top-bar {
   width: 100%;
-  background-color: rgba(0, 104, 56, 0.5);
+  background-color: rgba(0, 104, 56, 0.75);
 }
 @media screen and (min-width: 42em) {
   .front .top-bar, .membership .top-bar {
@@ -1423,7 +1423,7 @@ article > * {
   }
 }
 .main-menu__trigger:link, .main-menu__trigger:visited {
-  color: #291717;
+  color: #fafafd;
 }
 .main-menu__trigger:hover, .main-menu__trigger:focus, .main-menu__trigger:active {
   color: #fafafd;
@@ -1492,11 +1492,11 @@ article > * {
   }
 }
 .main-menu .menu a:link {
-  color: #291717;
+  color: #fafafd;
   text-decoration: none;
 }
 .main-menu .menu a:visited {
-  color: #291717;
+  color: #fafafd;
   text-decoration: none;
 }
 .main-menu .menu a:hover {
@@ -1528,7 +1528,7 @@ article > * {
 }
 @media screen and (max-width: 42em) {
   .main-menu.open > .menu {
-    background-color: #fafafd;
+    background-color: #006838;
     opacity: 1;
     right: 0;
     width: 40vw;
@@ -1614,7 +1614,7 @@ article > * {
   }
 }
 .logo-block__name:link, .logo-block__name:visited {
-  color: #3f3f3f;
+  color: #fafafd;
   text-decoration: none;
 }
 .logo-block__name:hover {
