@@ -1,28 +1,25 @@
 {
   "name": "eplct",
   "version": "1.0.0",
-  "description": "Website for Bridgham Farm and the EPLCT",
-  "main": "index.html",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jpamental@github.com/jpamental/eplct.git"
+    "url": "git+https://github.com/jpamental/eplct.git"
   },
-  "author": "Jason Pamental",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/jpamental/eplct/issues"
   },
   "homepage": "https://github.com/jpamental/eplct#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.0.0",
-    "sass": "^1.42.1"
-  },
   "dependencies": {
-    "gulp-sass-glob": "^1.1.0",
-    "gulp-sourcemaps": "^3.0.0"
+    "@11ty/eleventy": "^3.1.5",
+    "sass": "^1.94.2"
   }
 }
