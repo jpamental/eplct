@@ -1593,12 +1593,48 @@ article > * {
 
 .home-layout {
   display: grid;
-  grid-template-columns: max-content auto;
-  width: 85vw;
-  margin: 0 var(--margin-right) 0 var(--margin-left);
+  grid-template-columns: 1fr;
+  grid-template-areas: "content" "promo" "donate";
+  margin: 0;
+}
+@media screen and (min-width: 36rem) {
+  .home-layout {
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "donate content" "donate promo";
+  }
+}
+@media screen and (min-width: 65rem) {
+  .home-layout {
+    grid-template-columns: var(--margin-left) 1fr 1fr;
+    grid-template-areas: "donate content promo";
+  }
 }
 .home-layout h1 {
   color: #3f3f3f;
+}
+.home-layout__content {
+  grid-area: content;
+  margin: 0 2rem 2rem 2rem;
+}
+@media screen and (min-width: 65rem) {
+  .home-layout__content {
+    margin: 0 2rem 2rem 0;
+  }
+}
+.home-layout__promo {
+  grid-area: promo;
+  background-color: rgba(0, 104, 56, 0.15);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+.home-layout__donate {
+  grid-area: donate;
+  margin: 2rem;
+  text-align: center;
+}
+.home-layout__donate form img {
+  width: 1px;
 }
 
 .page-image-heading {
