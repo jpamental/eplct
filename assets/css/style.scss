@@ -1925,9 +1925,6 @@ article {
     grid-area: donate;
     margin: 2rem;
     text-align: center;
-    form img {
-      width: 1px;
-    }
   }
 }
 
@@ -2634,5 +2631,9 @@ body > footer {
 
 img.pixel {
   height: 1px;
+  width: 1px;
+}
+
+form img[width="1"] {
   width: 1px;
 }

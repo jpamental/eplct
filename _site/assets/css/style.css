@@ -1633,9 +1633,6 @@ article > * {
   margin: 2rem;
   text-align: center;
 }
-.home-layout__donate form img {
-  width: 1px;
-}
 
 .page-image-heading {
   margin: 0;
@@ -2331,5 +2328,9 @@ body > footer .social-links a {
 
 img.pixel {
   height: 1px;
+  width: 1px;
+}
+
+form img[width="1"] {
   width: 1px;
 }
