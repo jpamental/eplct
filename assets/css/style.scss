@@ -60,7 +60,7 @@ $color-supporting-gray-6: #eaeaea;
 
 
 $color-paper-light: #fafafd;
-$color-light-gray: #f0f0f0;
+$color-light-gray: #e0e0e0;
 $color-medium-gray: #8b8b8b;
 $color-light-blue: rgb(165,180,200);
 $color-blue: $color-navy;
@@ -1928,6 +1928,56 @@ article {
   }
 }
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  h3 {
+    font-stretch: 85%;
+    padding-bottom: 0.25rem;
+  }
+  .indicates-required {
+    font-style: italic;
+    font-size: 0.875rem;
+  }
+  input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.35rem;
+    border: 1px solid var(--color-light-gray);
+  }
+  .button {
+    background-color: $color-field-green;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    padding: 0.75rem 1.5rem 0.5rem;
+    margin: 0;
+    border-radius: 0.35rem;
+    box-shadow: none;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($color-field-green, 10%);
+      color: #ffffff
+    }
+    &:focus {
+      background-color: darken($color-field-green, 10%);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($color-field-green, 0.5);
+    }
+    &:active {
+      background-color: darken($color-field-green, 15%);
+    }
+    @media (pointer: coarse) {
+      &:hover {
+        background-color: $color-field-green;
+      }
+    }
+  }
+}
 
 .page-image-heading {
   //align-items: end;
